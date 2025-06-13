@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>6Z.BET - Complete Growth Strategy</title>
+    <title>6Z.BET - 完整增长策略</title>
     <style>
         * {
             margin: 0;
@@ -262,75 +262,40 @@
             animation: pulse 2s infinite;
         }
 
-       @media (max-width: 900px) {
+      
+@media (max-width: 900px) {
   .slide {
-    padding: 20px 4vw 20px 4vw !important;
+    padding: 20px 5px 10px 5px !important;
+    min-height: 100vh !important;
+    display: block !important;
+    width: 100vw !important;
+    overflow-y: auto !important;
   }
-  h1 { font-size: 2em !important; }
-  h2 { font-size: 1.5em !important; }
-  h3 { font-size: 1.1em !important; }
-  .subtitle { font-size: 1em !important; }
-  .roi-highlight { font-size: 1em !important; padding: 10px 10px !important; }
-  .metrics-grid, .features-grid {
-    grid-template-columns: 1fr !important;
-    gap: 18px !important;
-    margin: 20px 0 !important;
+  .slide > div {
+    min-height: auto !important;
+    height: auto !important;
+    width: 100% !important;
+    padding: 10px 0 !important;
   }
-  .metric-card, .feature-card {
-    padding: 20px !important;
-  }
-  .slide-4 > div > div[style*="display: flex"] {
-    flex-direction: column !important;
-    gap: 10px !important;
-    align-items: stretch !important;
-  }
-  .slide-4 > div > div[style*="display: grid"] {
-    grid-template-columns: 1fr !important;
-    gap: 16px !important;
-    margin-bottom: 20px !important;
-  }
-  .slide-4 [style*="padding: 25px"] {
-    padding: 10px !important;
-  }
-  .slide-4 ul li {
-    font-size: 1em !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    gap: 2px !important;
-  }
-  .slide-5 > div[style*="display: grid"], 
-  .slide-6 > div[style*="display: grid"], 
-  .slide-7 > div[style*="display: grid"] {
-    grid-template-columns: 1fr !important;
-    gap: 20px !important;
-    max-width: 100vw !important;
-  }
-  .cta-button {
-    font-size: 1.1em !important;
-    padding: 15px 10px !important;
-  }
-}
-
-@media (max-width: 600px) {
-  .slide {
-    padding: 8px 2vw 8px 2vw !important;
-  }
-  h1 { font-size: 1.2em !important; }
-  h2 { font-size: 1em !important; }
-  h3 { font-size: 0.95em !important; }
-  .subtitle { font-size: 0.95em !important; }
-  .roi-highlight { font-size: 0.95em !important; padding: 6px 4px !important; }
+  h1 { font-size: 1.5em !important; margin-bottom: 15px !important; }
+  h2 { font-size: 1.2em !important; margin-bottom: 20px !important; }
+  h3 { font-size: 1em !important; margin-bottom: 10px !important; }
+  .subtitle { font-size: 1em !important; margin-bottom: 15px !important; }
+  .roi-highlight { font-size: 1em !important; padding: 10px 10px !important; margin: 10px 0 !important; }
   .metrics-grid, .features-grid {
     grid-template-columns: 1fr !important;
     gap: 10px !important;
     margin: 10px 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
   }
   .metric-card, .feature-card {
-    padding: 10px !important;
+    padding: 15px !important;
   }
+  /* Slide 4 - Cards e grids */
   .slide-4 > div > div[style*="display: flex"] {
     flex-direction: column !important;
-    gap: 6px !important;
+    gap: 10px !important;
     align-items: stretch !important;
   }
   .slide-4 > div > div[style*="display: grid"] {
@@ -339,25 +304,50 @@
     margin-bottom: 10px !important;
   }
   .slide-4 [style*="padding: 25px"] {
-    padding: 6px !important;
+    padding: 10px !important;
   }
   .slide-4 ul li {
     font-size: 0.95em !important;
     flex-direction: column !important;
     align-items: flex-start !important;
-    gap: 1px !important;
+    gap: 2px !important;
   }
+  /* Slide 4 - Termos comerciais */
+  .slide-4 > div > div[style*="background: linear-gradient(135deg"] {
+    padding: 10px !important;
+    margin: 10px 0 !important;
+  }
+  .slide-4 > div > div[style*="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+  /* Slide 5, 6, 7 - Grids */
   .slide-5 > div[style*="display: grid"], 
   .slide-6 > div[style*="display: grid"], 
   .slide-7 > div[style*="display: grid"] {
     grid-template-columns: 1fr !important;
-    gap: 10px !important;
-    max-width: 100vw !important;
+    gap: 20px !important;
+    max-width: 100% !important;
   }
   .cta-button {
     font-size: 1em !important;
-    padding: 12px 4px !important;
+    padding: 10px 15px !important;
   }
+  .slide-indicator {
+    top: 10px !important;
+    right: 10px !important;
+    font-size: 1em !important;
+  }
+  .navigation {
+    bottom: 10px !important;
+    gap: 8px !important;
+  }
+}
+/* CSS extra para garantir fundo branco e altura total no slide 4 */
+.slide-4,
+.slide-4 > div {
+    background: #fff !important;
+    min-height: 100vh !important;
 }
     </style>
 </head>
@@ -438,8 +428,8 @@
     </div>
 
     <!-- Slide 4: Media Plan Details -->
-<div class="slide slide-4" style="padding: 0; overflow-y: auto; background: white; color: #000; height: 100vh; width: 100vw;">
-    <div style="width: 100%; min-height: 100vh; overflow: hidden;">
+<div class="slide slide-4" style="padding: 0; overflow-y: auto; background: white; color: #000; min-height: 100vh; width: 100vw;">
+    <div style="width: 100%; min-height: 100vh; background: white; overflow: hidden;">
         <div style="background: linear-gradient(135deg, #FF8B00, #FFE01B); color: #000000; padding: 30px; text-align: center;">
             <h1 style="margin: 0; font-size: 2.5em; font-weight: 300;">6Z.BET年度媒体计划</h1>
             <p style="margin: 10px 0 0 0; opacity: 0.9; font-size: 1.2em;">2025年巴西全方位户外广告活动 | CARACOL MEDIA</p>
